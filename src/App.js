@@ -25,8 +25,7 @@ import {
   // AiFillDollarCircle,
 } from 'react-icons/ai';
 
-import { FaTelegram, FaInstagram } from 'react-icons/fa';
-import { FiYoutube } from 'react-icons/fi';
+import { FaTelegram, FaInstagram, FaGraduationCap, FaBook, FaHome, FaChild } from 'react-icons/fa';
 import { FaMoon } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
 
@@ -67,19 +66,39 @@ function App() {
     },
   ];
 
-  const devlinksMuslimTube = [
-    {
-      url: 'https://m-three-weld.vercel.app/',
-      icon: FiYoutube,
-      text: 'MuslimContent',
-    },
-  ];
+  // const devlinksMuslimTube = [
+  //   {
+  //     url: 'https://m-three-weld.vercel.app/',
+  //     icon: FiYoutube,
+  //     text: 'MuslimContent',
+  //   },
+  // ];
 
   const devlinks = [
     {
       url: 'https://www.nasyikat.media/?fbclid=PAZXh0bgNhZW0CMTEAAabH2nWI83VtEvd-EPr93ZtkR-oDlVaTR9Yqg9b8vYT5u2TCqJIJYRgdqd8_aem_5CeJBO3URcs_YDGEhCfPIw',
       icon: FaMoon,
       text: 'nasyikat.media',
+    },
+    {
+      url: 'https://www.instagram.com/nyrlybilim?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+      icon: FaGraduationCap,
+      text: 'nyrlybilim',
+    },
+    {
+      url: 'https://www.instagram.com/islam_world.media?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+      icon: FaBook,
+      text: 'islam_world.media',
+    },
+    {
+      url: 'https://www.instagram.com/muslimmlife715?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+      icon: FaHome,
+      text: 'muslimmlife715',
+    },
+    {
+      url: 'https://www.instagram.com/little_muslim_s/?utm_source=ig_web_button_share_sheet',
+      icon: FaChild,
+      text: 'little_muslim_s',
     },
   ];
 
@@ -199,7 +218,7 @@ function App() {
             </HStack>
 
             {/* Список "Поддержать" */}
-            <List
+            {/* <List
               as={motion.ul}
               variants={parentContainer}
               initial="hidden"
@@ -254,7 +273,7 @@ function App() {
                   </Text>
                 </HStack>
               ))}
-            </List>
+            </List> */}
 
             {/* Блок с ссылками */}
             <List
